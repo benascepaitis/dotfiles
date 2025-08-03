@@ -1,8 +1,8 @@
 # System options:
-export ENV="$HOME/.shrc"
+#export ENV="$HOME/.shrc"
 export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/tmp/.$(id -u)-runtime-dir}"
 [ -d "$XDG_RUNTIME_DIR" ] || { mkdir -p "$XDG_RUNTIME_DIR" && chmod 0700 "$XDG_RUNTIME_DIR"; }
-export POSIXLY_CORRECT=1
+#export POSIXLY_CORRECT=1
 export XDG_DATA_DIRS="$HOME/.local/share:/usr/local/share:/usr/share:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share"
 export XDG_CONFIG_DIRS="$HOME/.config"
 export PATH="$PATH:$HOME/.local/bin:$HOME/Applications:$HOME/.local/share/flatpak/exports/bin"
@@ -22,10 +22,10 @@ export PF_SEP="@→"
 export PF_DISABLED_PACKAGE_MANAGERS="flatpak cargo"
 
 # Go options:
-export CGO_ENABLED=0
+#export CGO_ENABLED=0
 export GOFLAGS="-ldflags=-static-pie -ldflags=-s -ldflags=-w"
 export GO_LDFLAGS="-buildmode=static-pie -s -w"
-export CGO_CFLAGS="-O2 -pipe -static -static-pie -w -Wno-error"
+#export CGO_CFLAGS="-O2 -pipe -static -static-pie -w -Wno-error"
 #export GOEXPERIMENT="greenteagc"
 #export GOROOT="$(echo /usr/lib/go-*)"
 export GOCACHE="$HOME/.cache/go"
@@ -66,4 +66,4 @@ export PROTON_ENABLE_WAYLAND=1
 export SDL_AUDIODRIVER="pipewire"
 
 # Always use intel iGPU
-export VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/intel_icd.x86_64.json:usr/share/vulkan/icd.d/intel_icd.i686.json"
+#export VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/intel_icd.x86_64.json:usr/share/vulkan/icd.d/intel_icd.i686.json"
